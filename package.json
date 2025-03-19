@@ -18,7 +18,6 @@
     "url": "git+ssh://github.com/rvanbaalen/rvanbaalen/package-name.git"
   },
   "keywords": [
-    "dom",
     "javascript"
   ],
   "author": "Robin van Baalen",
