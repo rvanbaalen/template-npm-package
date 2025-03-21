@@ -47,7 +47,10 @@ jobs:
 #        env:
 #          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
-      - name: Build
+      - name: Render README.md to HTML
+        run: npx @rvanbaalen/readme-to-html
+
+      - name: Prepare rendered HTML for deployment with Vite
         run: npm run build
 
       - name: Upload artifact
